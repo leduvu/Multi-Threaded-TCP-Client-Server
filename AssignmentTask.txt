@@ -1,0 +1,26 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red53\green53\blue53;}
+{\*\expandedcolortbl;;\cssrgb\c27059\c27059\c27059;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab560
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\fs24 \cf2 The submitted jar will be executed as below (just an example):\
+(1) java -cp submitted_file.jar Assignment1.Server 8000\
+(2) java -cp submitted_file.jar Assignment1.Producer localhost 8000 Client1 input.text\
+(3) java -cp submitted_file.jar Assignment1.Listener localhost 8000\
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf2 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 Assignment 1\
+------------------\
+In this assignment, you will use socket programming to simulate a chat room application. You have to implement:\
+- A TCP server: it has to store all messages sent from the producer client. It also has to send all stored messages to a new listener client, and keep the listener client updated if a new message is received. \
+- A TCP Producer client: it first identifies itself as a producer client to the server and then sends messages. \
+- A TCP Listener client: it first identifies itself as a listener client to the server and then continuously receives messages from the server. \
+All implementations have to be in the Java programming language. Partially implemented java files for the server and clients are provided inside the "Assignment1" package. Your task is to complete the implementation. Apart from the java codebase, the following files are included in the project bundle\
+- messages.txt is an example file the Producer will have to read\
+- test_script.sh is an example evaluation script. You need a bash shell to execute this script. Before running the script, make it executable with the command 'chmod +x test_script.sh'.\
+- sample_output.txt is the example output the Listener will have to produce if the Producer used messages.txt file. \'93test_script.sh\'94 will compare your output with it.\
+The final submission has to be a single jar file, which includes three java files (Server.java, Producer.java, and Server.java).}
